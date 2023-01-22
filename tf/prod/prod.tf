@@ -2,7 +2,7 @@ terraform {
   cloud {
     organization = "sko"
     workspaces {
-      name = "sko-cicd-prod"
+      name = "sko-cicd-prod-ca"
     }
   }
 }
@@ -20,5 +20,5 @@ module "bxi" {
 
 variable "environment_name" {
   description = "name that will be used when creating PingOne Environment"
-  default = "sko-cicd-prod"
+  default = "sko-cicd-prod-ca"
 }
